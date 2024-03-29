@@ -1,13 +1,13 @@
 :root {
 	--primary: #2F2E41;
-	--listBtn: rgb(203, 96, 253);
+	--listBtn: #cb60fd;
 
-	--gray: rgb(166, 166, 166);
-	--red: red;
-	--yellow: yellow;
-	--blue: rgb(0, 126, 235);
-	--purple: rgb(255, 0, 255);
-	--green: rgb(0, 205, 0);
+	--gray: #a6a6a6;
+	--red: #ff0000;
+	--yellow: #ffff00;
+	--blue: #007eeb;
+	--purple: #ff00ff;
+	--green: #00cd00;
 }
 
 header {

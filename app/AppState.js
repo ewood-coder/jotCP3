@@ -10,7 +10,33 @@ class ObservableAppState extends EventEmitter {
 	/**
 	 * @type {Jot[]}
 	 */
-	jots = []
+	jots = [
+		new Jot({
+			title: 'Bigfoot',
+			threatLevel: '#00cd00',
+			securityLevel: 'Euclid'
+		}),
+		new Jot({
+			title: 'Dolphins',
+			threatLevel: '#007eeb',
+			securityLevel: 'High Noon'
+		}),
+		new Jot({
+			title: 'Dolphins',
+			threatLevel: '#ff00ff',
+			securityLevel: 'High Noon'
+		}),
+		new Jot({
+			title: 'Dolphins',
+			threatLevel: '#ffff00',
+			securityLevel: 'High Noon'
+		}),
+		new Jot({
+			title: 'Dolphins',
+			threatLevel: '#ff0000',
+			securityLevel: 'High Noon'
+		}),
+	]
 
 	/**
 	 * @type {Jot}
