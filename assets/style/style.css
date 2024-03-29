@@ -1,0 +1,147 @@
+:root {
+	--primary: #2F2E41;
+	--listBtn: rgb(203, 96, 253);
+
+	--gray: rgb(166, 166, 166);
+	--red: red;
+	--yellow: yellow;
+	--blue: rgb(0, 126, 235);
+	--purple: rgb(255, 0, 255);
+	--green: rgb(0, 205, 0);
+}
+
+header {
+	background-color: #2F2E41;
+	align-items: center;
+}
+
+body {
+	background-color: var(--primary);
+	font-family: "Space Mono", monospace;
+	color: white;
+}
+
+/* ----------------------------------- */
+.scpLogo {
+	height: 7rem;
+}
+
+@media only screen and (max-width: 575px) {
+	.scpLogo {
+		height: 3rem;
+	}
+
+	.listBtn {
+		background-color: var(--listBtn);
+		color: white;
+		margin-left: 6rem;
+		height: 3rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.scpLogo {
+		height: 4rem;
+	}
+}
+
+/* ----------------------------------- */
+
+.listBtn {
+	background-color: var(--listBtn);
+	color: white;
+}
+
+.listBtn:hover {
+	background-color: rgb(224, 224, 224);
+	color: var(--listBtn);
+}
+
+.listBtn:enabled {
+	background-color: var(--listBtn);
+	color: white;
+}
+
+/* ---------------------------------- */
+/********* SECTION: COLORS ********** */
+
+.li-1 {
+	color: var(--green);
+}
+
+.li-2 {
+	color: var(--blue)
+}
+
+.li-3 {
+	color: var(--purple);
+}
+
+.li-4 {
+	color: var(--yellow);
+}
+
+.li-5 {
+	color: var(--red);
+}
+
+/* ---------------------------------- */
+
+.hidden {
+	display: none;
+}
+
+.newFont {
+	font-family: "PT Mono", monospace;
+}
+
+.mainBoxes {
+	border: solid rgb(213, 213, 213) 2px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.fs-6 {
+	margin-left: .5rem;
+}
+
+.addBtn {
+	border: solid;
+	border-color: var(--listBtn);
+	border-radius: 10px;
+	color: white;
+	background-color: var(--listBtn);
+}
+
+.addBtn:hover {
+	border: solid;
+	border-radius: 10px;
+	border-color: var(--listBtn);
+	color: var(--listBtn);
+	background-color: white;
+}
+
+.custom-select {
+	border: none;
+	border-radius: 5px;
+	color: white;
+	background-color: rgb(0, 0, 0);
+}
+
+.dltIcon {
+	/* background-color: rgb(255, 102, 85); */
+	color: white;
+	font-size: 2rem;
+}
+
+.dltBtn {
+	width: 4rem;
+	height: 4rem;
+
+	border-radius: 50%;
+	background-color: rgb(255, 102, 85);
+	border: none;
+}
