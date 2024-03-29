@@ -15,6 +15,4 @@ export class JotsController {
 		// this.drawFieldReports()
 		fieldReportsService.loadFieldReports()
 	}
-
-
 }
