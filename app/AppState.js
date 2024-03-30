@@ -12,29 +12,34 @@ class ObservableAppState extends EventEmitter {
 	 */
 	jots = [
 		new Jot({
-			title: 'Bigfoot',
-			threatLevel: '#00cd00',
-			securityLevel: 'Euclid'
+			title: 'SCP-173',
+			securityLevel: 'yellow',
+			threatLevel: 'Euclid'
 		}),
 		new Jot({
-			title: 'Dolphins',
-			threatLevel: '#007eeb',
-			securityLevel: 'High Noon'
+			title: 'SCP-106',
+			securityLevel: 'orange',
+			threatLevel: 'Keter'
 		}),
 		new Jot({
-			title: 'Dolphins',
-			threatLevel: '#ff00ff',
-			securityLevel: 'High Noon'
+			title: 'SCP-179',
+			securityLevel: 'purple',
+			threatLevel: 'Thaumiel'
 		}),
 		new Jot({
-			title: 'Dolphins',
-			threatLevel: '#ffff00',
-			securityLevel: 'High Noon'
+			title: 'SCP-53435',
+			securityLevel: 'red',
+			threatLevel: 'Apollyon'
 		}),
 		new Jot({
-			title: 'Dolphins',
-			threatLevel: '#ff0000',
-			securityLevel: 'High Noon'
+			title: 'SCP-3455',
+			securityLevel: 'green',
+			threatLevel: 'Archon'
+		}),
+		new Jot({
+			title: 'SCP-8697',
+			securityLevel: 'blue',
+			threatLevel: 'Ticonderoga'
 		}),
 	]
 

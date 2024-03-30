@@ -3,7 +3,7 @@
 
 		<!-- SECTION: JOTS LIST BOX (LEFT) -->
 		<section class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0 mainBoxes rounded">
-			<h1 class="text-center py-2 mb-0">Jots:</h1>
+			<h1 class="text-center py-2 mb-0">Jots: 6</h1>
 			<hr class="mt-0 py-0" />
 
 			<div>
@@ -14,11 +14,12 @@
 
 						<select class="col-9 custom-select my-2 mr-sm-2" id="customSelectPref">
 							<option selected>Choose Importance Level:</option>
-							<option class="li-1" value="1">Euclid</option>
-							<option class="li-2" value="2">Keter</option>
-							<option class="li-3" value="3">Thaumiel</option>
-							<option class="li-4" value="4">Apollyon</option>
-							<option class="li-5" value="5">Archon</option>
+							<option class="yellow" value="1">Euclid</option>
+							<option class="orange" value="2">Keter</option>
+							<option class="red" value="4">Apollyon</option>
+							<option class="purple" value="3">Thaumiel</option>
+							<option class="green" value="5">Archon</option>
+							<option class="blue" value="5">Ticonderoga</option>
 						</select>
 
 						<button type="submit" class="col-2 text-center p-0 my-2 addBtn">Add</button>
@@ -28,12 +29,13 @@
 			<hr />
 
 			<div>
-				<ul class="fs-3">
+				<ul class="fs-3" id="jotList">
 					<li>HTML<i class="mdi mdi-circle-double fs-6 li-1"></i></li>
 					<li>CSS<i class="mdi mdi-circle-double fs-6 li-2"></i></li>
 					<li>JavaScript<i class="mdi mdi-circle-double fs-6 li-3"></i></li>
 					<li>Sass<i class="mdi mdi-circle-double fs-6 li-4"></i></li>
 					<li>Vue<i class="mdi mdi-circle-double fs-6 li-5"></i></li>
+					<li>Svelte<i class="mdi mdi-circle-double fs-6 li-6"></i></li>
 				</ul>
 			</div>
 
@@ -42,13 +44,13 @@
 
 		<!-- SECTION: ACTIVE JOT TEXT (RIGHT) -->
 		<section class="col-12 col-md-8 mainBoxes rounded">
-			<span class="p-2 p-xl-5 rounded row">
+			<span class="p-2 p-xl-5 rounded row" id="activeJot">
 
 				<span class="col-12 col-md-4 pt-4 pt-md-0">
 					<h1>HTML<i class="mdi mdi-circle-double fs-6 li-1"></i></h1>
+					<!-- <h5 style="color: ${this.securityLevel};" class="my-4">${this.threatLevel}</h5> -->
 					<p class="my-4"><u>Created at:</u> 10/07/2022, 7:13:44 PM</p>
 					<p class="my-4"><u>Updated at:</u> 11/11/2022, 4:09:10 PM</p>
-					<p></p>
 				</span>
 
 				<span class="col-12 col-md-8 col-lg-8">

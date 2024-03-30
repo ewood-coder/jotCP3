@@ -8,6 +8,7 @@
 	--blue: #007eeb;
 	--purple: #ff00ff;
 	--green: #00cd00;
+	--orange: #ffa500;
 }
 
 header {
@@ -65,24 +66,28 @@ body {
 /* ---------------------------------- */
 /********* SECTION: COLORS ********** */
 
-.li-1 {
-	color: var(--green);
-}
-
-.li-2 {
-	color: var(--blue)
-}
-
-.li-3 {
-	color: var(--purple);
-}
-
-.li-4 {
+.yellow {
 	color: var(--yellow);
 }
 
-.li-5 {
+.orange {
+	color: var(--orange);
+}
+
+.purple {
+	color: var(--purple);
+}
+
+.red {
 	color: var(--red);
+}
+
+.green {
+	color: var(--green);
+}
+
+.blue {
+	color: var(--blue);
 }
 
 /* ---------------------------------- */
