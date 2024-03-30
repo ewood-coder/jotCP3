@@ -26,27 +26,23 @@ export class Jot {
 
 	get ActiveDetailsTemplate() {
 		return `
-			<span class="col-12 col-md-4 pt-4 pt-md-0">
+			<span class="col-12 col-md-4 pt-4 pt-md-0 d-flex flex-column">
 				<h1>${this.title}<i class="mdi mdi-circle-double fs-6 ${this.securityLevel}"></i></h1>
-				<h5 style="color: ${this.securityLevel};" class="my-4">${this.threatLevel}</h5>
-				<p class="my-4"><u>Created at:</u> ${this.createdAt}</p>
-				<p class="my-4"><u>Updated at:</u> ${this.lastUpdated}</p>
+				<h5 class="my-4 ${this.securityLevel}">${this.threatLevel}</h5>
+				<p class="my-4"><u>Created at:</u> ${this.CreatedDateTime}</p>
+				<p class="my-4"><u>Updated at:</u> ${this.LastUpdated}</p>
+				<button onclick="app.JotsController.destroyJot()" class="dltBtn col-1 mt-auto mb-4 mb-md-0 align-self-end" type="button"><i class="mdi mdi-trash-can dltIcon"></i></button>
 			</span>
 
 			<span class="col-12 col-md-8 col-lg-8">
 				<form>
 					<div class="form-group">
 						<textarea onblur="app.JotsController.updateJot()" class="form-control" id="textArea" rows="22" name="body" id="reportBody"
-							placeholder="Jot something down...">${this.body}</textarea>
-						<span class="row justify-content-between align-items-center px-3 my-3">
-							<button onclick="app.JotsController.destroyJot()" class="dltBtn col-1" type="button"><i class="mdi mdi-trash-can dltIcon"></i></button>
-						</span>
+							placeholder="Jot something down... Anything entered into this box will be saved automatically">${this.body}</textarea>
 					</div>
 				</form>
 			</span>
 		`
-		// <button for="textArea" type="submit" class="addBtn py-1 col-8">Submit</button>
-
 	}
 
 	get CreatedDate() {
@@ -55,6 +51,10 @@ export class Jot {
 
 	get CreatedTime() {
 		return this.createdAt.toLocaleTimeString() // 12:28:11 PM
+	}
+
+	get CreatedDateTime() {
+		return this.createdAt.toLocaleString()
 	}
 
 	get LastUpdated() {

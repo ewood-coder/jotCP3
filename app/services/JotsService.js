@@ -7,7 +7,34 @@ import { loadState, saveState } from "../utils/Store.js";
 class JotsService {
 
 	createJot(jotFormData) {
-		const newJot = new Jot(jotFormData)
+
+		let threatLevel = ''
+
+		switch (jotFormData.securityLevel) {
+			case 'yellow':
+				threatLevel = 'Euclid'
+				break
+			case 'orange':
+				threatLevel = 'Keter'
+				break
+			case 'purple':
+				threatLevel = 'Thaumiel'
+				break
+			case 'red':
+				threatLevel = 'Apollyon'
+				break
+			case 'green':
+				threatLevel = 'Archon'
+				break
+			case 'blue':
+				threatLevel = 'Ticonderoga'
+				break
+		}
+
+
+		// NOTE: We need the '...' (spread operator) here so that the object that were passing into the constructor doesn't have the property jotFormData, but instead the properties within it.
+		const newJot = new Jot({ ...jotFormData, threatLevel })
+
 		// console.log('Fancy new report', newFieldReport);
 		AppState.jots.push(newJot)
 		// console.log('Field reports in appstate', AppState.fieldReports);

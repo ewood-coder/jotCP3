@@ -14,11 +14,9 @@ export class JotsController {
 		AppState.on('jots', this.drawJots)
 		AppState.on('activeJot', this.drawActiveJot)
 		AppState.on('jots', this.drawJotCount)
-		this.drawJotCount()
-		this.drawJots()
 
 		// this.drawFieldReports() // no longer needed, retrieving fieldReports from local storage will trigger our listener 
-		// jotsService.loadJots()
+		jotsService.loadJots()
 	}
 
 	drawJotCount() {
@@ -44,13 +42,15 @@ export class JotsController {
 
 	}
 
-	createJot() {
+	createJot(event) {
 		try {
 			event.preventDefault()
 			console.log('🛠️ Creating jot 🛠️');
 			const form = event.target
 			const jotFormData = getFormData(form)
+
 			console.log('here is your data', jotFormData);
+
 			jotsService.createJot(jotFormData)
 
 			// @ts-ignore

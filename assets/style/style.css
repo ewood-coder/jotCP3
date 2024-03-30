@@ -159,3 +159,11 @@ ul {
 	color: rgb(149, 149, 255);
 	cursor: pointer;
 }
+
+/* ----------------------- */
+.fixImg {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 0.5;
+}

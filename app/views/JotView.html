@@ -7,19 +7,19 @@
 			<hr class="mt-0 py-0" />
 
 			<div>
-				<form>
+				<form onsubmit="app.JotsController.createJot(event)">
 					<div class="form-group row d-flex justify-content-between p-2">
-						<input type="text" class="col-12 rounded py-1" for="favcolor" class="form-control"
-							id="formGroupExampleInput" placeholder="Note Name:" minlength="3" maxlength="15">
+						<input type="text" class="col-12 rounded py-1" for="favcolor" class="form-control" name="title"
+							placeholder="Note Name:" minlength="3" maxlength="15">
 
-						<select class="col-9 custom-select my-2 mr-sm-2" id="customSelectPref">
-							<option selected>Choose Importance Level:</option>
-							<option class="yellow" value="1">Euclid</option>
-							<option class="orange" value="2">Keter</option>
-							<option class="red" value="4">Apollyon</option>
-							<option class="purple" value="3">Thaumiel</option>
-							<option class="green" value="5">Archon</option>
-							<option class="blue" value="5">Ticonderoga</option>
+						<select class="col-9 custom-select my-2 mr-sm-2" required>
+							<option value="" selected disabled>Choose Importance Level:</option>
+							<option class="yellow" value="yellow">Euclid</option>
+							<option class="orange" value="orange">Keter</option>
+							<option class="red" value="red">Apollyon</option>
+							<option class="purple" value="purple">Thaumiel</option>
+							<option class="green" value="green">Archon</option>
+							<option class="blue" value="blue">Ticonderoga</option>
 						</select>
 
 						<button type="submit" class="col-2 text-center p-0 my-2 addBtn">Add</button>
@@ -46,14 +46,15 @@
 		<section class="col-12 col-md-8 mainBoxes rounded">
 			<span class="p-2 p-xl-5 rounded row" id="activeJot">
 
-				<span class="col-12 col-md-4 pt-4 pt-md-0">
-					<h1>HTML<i class="mdi mdi-circle-double fs-6 li-1"></i></h1>
-					<!-- <h5 style="color: ${this.securityLevel};" class="my-4">${this.threatLevel}</h5> -->
+				<span class="col-12 col-md-7 pt-4 pt-md-0 d-flex justify-content-center">
+					<!-- <h1>HTML<i class="mdi mdi-circle-double fs-6 li-1"></i></h1>
 					<p class="my-4"><u>Created at:</u> 10/07/2022, 7:13:44 PM</p>
-					<p class="my-4"><u>Updated at:</u> 11/11/2022, 4:09:10 PM</p>
+					<p class="my-4"><u>Updated at:</u> 11/11/2022, 4:09:10 PM</p> -->
+					<img class="fixImg" src="../assets/img/typewriter.png" alt="">
 				</span>
 
-				<span class="col-12 col-md-8 col-lg-8">
+
+				<!-- <span class="col-12 col-md-8 col-lg-8">
 					<form>
 						<div class="form-group">
 							<textarea class="form-control" id="textArea" rows="22"
@@ -64,7 +65,7 @@
 							</span>
 						</div>
 					</form>
-				</span>
+				</span> -->
 
 			</span>
 		</section>
