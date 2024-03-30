@@ -15,10 +15,9 @@ export class Jot {
 	}
 
 
-
 	get ListTemplate() {
 		return `
-			<li onclick="app.JotsController.setActiveJot('${this.id}')">
+			<li class="underline" onclick="app.JotsController.setActiveJot('${this.id}')">
 				${this.title}<i class="mdi mdi-circle-double fs-6 ${this.securityLevel}"></i>
 			</li>
 		`
@@ -40,13 +39,14 @@ export class Jot {
 						<textarea onblur="app.JotsController.updateJot()" class="form-control" id="textArea" rows="22" name="body" id="reportBody"
 							placeholder="Jot something down...">${this.body}</textarea>
 						<span class="row justify-content-between align-items-center px-3 my-3">
-							<button for="textArea" type="submit" class="addBtn py-1 col-8">Submit</button>
 							<button onclick="app.JotsController.destroyJot()" class="dltBtn col-1" type="button"><i class="mdi mdi-trash-can dltIcon"></i></button>
 						</span>
 					</div>
 				</form>
 			</span>
 		`
+		// <button for="textArea" type="submit" class="addBtn py-1 col-8">Submit</button>
+
 	}
 
 	get CreatedDate() {

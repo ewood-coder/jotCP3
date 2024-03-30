@@ -150,3 +150,12 @@ ul {
 	background-color: rgb(255, 102, 85);
 	border: none;
 }
+
+.underline {
+	text-decoration: underline;
+}
+
+.underline:hover {
+	color: rgb(149, 149, 255);
+	cursor: pointer;
+}

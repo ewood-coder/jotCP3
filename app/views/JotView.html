@@ -3,14 +3,14 @@
 
 		<!-- SECTION: JOTS LIST BOX (LEFT) -->
 		<section class="col-12 col-md-4 col-lg-3 mb-2 mb-md-0 mainBoxes rounded">
-			<h1 class="text-center py-2 mb-0">Jots: 6</h1>
+			<h1 class="text-center py-2 mb-0">Jots: <span id="jotCount"></span></h1>
 			<hr class="mt-0 py-0" />
 
 			<div>
 				<form>
 					<div class="form-group row d-flex justify-content-between p-2">
 						<input type="text" class="col-12 rounded py-1" for="favcolor" class="form-control"
-							id="formGroupExampleInput" placeholder="Note Name:">
+							id="formGroupExampleInput" placeholder="Note Name:" minlength="3" maxlength="15">
 
 						<select class="col-9 custom-select my-2 mr-sm-2" id="customSelectPref">
 							<option selected>Choose Importance Level:</option>
@@ -30,12 +30,12 @@
 
 			<div>
 				<ul class="fs-3" id="jotList">
-					<li>HTML<i class="mdi mdi-circle-double fs-6 li-1"></i></li>
-					<li>CSS<i class="mdi mdi-circle-double fs-6 li-2"></i></li>
-					<li>JavaScript<i class="mdi mdi-circle-double fs-6 li-3"></i></li>
-					<li>Sass<i class="mdi mdi-circle-double fs-6 li-4"></i></li>
-					<li>Vue<i class="mdi mdi-circle-double fs-6 li-5"></i></li>
-					<li>Svelte<i class="mdi mdi-circle-double fs-6 li-6"></i></li>
+					<li>HTML<i class="mdi mdi-circle-double fs-6 yellow"></i></li>
+					<li>CSS<i class="mdi mdi-circle-double fs-6 orange"></i></li>
+					<li>JavaScript<i class="mdi mdi-circle-double fs-6 red"></i></li>
+					<li>Sass<i class="mdi mdi-circle-double fs-6 purple"></i></li>
+					<li>Vue<i class="mdi mdi-circle-double fs-6 green"></i></li>
+					<li>Svelte<i class="mdi mdi-circle-double fs-6 blue"></i></li>
 				</ul>
 			</div>
 

@@ -46,7 +46,7 @@ class ObservableAppState extends EventEmitter {
 	/**
 	 * @type {Jot}
 	 */
-	activeJots = null
+	activeJot = null
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
