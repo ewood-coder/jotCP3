@@ -35,9 +35,7 @@ class JotsService {
 		// NOTE: We need the '...' (spread operator) here so that the object that were passing into the constructor doesn't have the property jotFormData, but instead the properties within it.
 		const newJot = new Jot({ ...jotFormData, threatLevel })
 
-		// console.log('Fancy new report', newFieldReport);
 		AppState.jots.push(newJot)
-		// console.log('Field reports in appstate', AppState.fieldReports);
 		this.saveJots()
 	}
 
@@ -48,7 +46,7 @@ class JotsService {
 		// NOTE we want to update the timestamp whenever we have set an active report
 		foundJot.lastUpdated = new Date()
 
-		// NOTE make sure we update local storage after updating something!
+		// NOTE make sure we update local storage after changing something!
 		this.saveJots()
 
 		AppState.activeJot = foundJot
